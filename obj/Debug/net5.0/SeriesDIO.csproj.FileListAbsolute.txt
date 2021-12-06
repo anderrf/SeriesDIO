@@ -1,0 +1,16 @@
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.exe
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.deps.json
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.runtimeconfig.json
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.runtimeconfig.dev.json
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.dll
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\ref\SeriesDIO.dll
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\bin\Debug\net5.0\SeriesDIO.pdb
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.csproj.AssemblyReference.cache
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.AssemblyInfoInputs.cache
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.AssemblyInfo.cs
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.csproj.CoreCompileInputs.cache
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.dll
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\ref\SeriesDIO.dll
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.pdb
+C:\Users\ModalGR\Desktop\cursos\.NET Fundamentals\SeriesDIO\obj\Debug\net5.0\SeriesDIO.genruntimeconfig.cache

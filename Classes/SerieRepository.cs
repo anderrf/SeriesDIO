@@ -9,32 +9,40 @@ namespace SeriesDIO.Classes
 
         public void Exclude(int id)
         {
-            throw new System.NotImplementedException();
+            SerieList[SerieList.FindIndex(serie => serie.getId() == id)].Exclude();
         }
 
         public Serie GetById(int id)
         {
-            throw new System.NotImplementedException();
+            return SerieList[SerieList.FindIndex(serie => serie.getId() == id)];
         }
 
-        public void Insert(Serie entity)
+        public void Insert(Serie serie)
         {
-            throw new System.NotImplementedException();
+            SerieList.Add(serie);
         }
 
         public List<Serie> List()
         {
-            throw new System.NotImplementedException();
+            List<Serie> getList = new List<Serie>();
+            foreach(Serie serie in SerieList)
+            {
+                if(!serie.getExcluded())
+                {
+                    getList.Add(serie);
+                }
+            }
+            return getList;
         }
 
         public int NextId()
         {
-            throw new System.NotImplementedException();
+            return SerieList.Count;
         }
 
-        public void Update(int id, Serie entity)
+        public void Update(int id, Serie serie)
         {
-            throw new System.NotImplementedException();
+            SerieList[SerieList.FindIndex(serie => serie.getId() == id)] = serie;
         }
     }
 }

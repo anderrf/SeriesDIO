@@ -9,6 +9,7 @@ namespace SeriesDIO.Classes
         private string Title { get; set; }
         private string Description { get; set; }
         private int Year { get; set; }
+        private bool Excluded {get; set; }
 
         public Serie(int id, Genre genre, string title, string description, int year)
         {
@@ -17,7 +18,7 @@ namespace SeriesDIO.Classes
             this.Title = title;
             this.Description = description;
             this.Year = year;
-
+            this.Excluded = false;
         }
 
         public override string ToString()
@@ -38,6 +39,15 @@ namespace SeriesDIO.Classes
         public int getId()
         {
             return this.Id;
+        }
+
+        public bool getExcluded()
+        {
+            return this.Excluded;
+        }
+
+        public void Exclude(){
+            this.Excluded = true;
         }
     }
 }
