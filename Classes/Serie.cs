@@ -28,6 +28,7 @@ namespace SeriesDIO.Classes
             returnContent += "Title: " + this.Title + Environment.NewLine;
             returnContent += "Description: " + this.Description + Environment.NewLine;
             returnContent += "Year: " + this.Year + Environment.NewLine;
+            returnContent += "Excluded: " + this.Excluded + Environment.NewLine;
             return returnContent;
         }
 

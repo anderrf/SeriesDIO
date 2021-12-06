@@ -42,22 +42,49 @@ namespace SeriesDIO
                 }
                 Console.ReadKey();
             }
+            Console.WriteLine("Finishing...");
             Console.ReadKey();
         }
 
         private static void ViewSerie()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Type the serie's Id: ");
+            int serieIndex = int.Parse(Console.ReadLine());
+            Serie serie = repository.GetById(serieIndex);
+            Console.WriteLine(serie);
         }
 
         private static void ExcludeSerie()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Type the serie's Id: ");
+            int serieIndex = int.Parse(Console.ReadLine());
+            repository.Exclude(serieIndex);
         }
 
         private static void UpdateSerie()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Type the serie's Id: ");
+            int serieIndex = int.Parse(Console.ReadLine());
+            foreach(int i in Enum.GetValues(typeof(Genre)))
+            {
+                Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genre), i));
+            }
+            Console.WriteLine("Type the serie's genre between the options above: ");
+            int genreInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the serie's title: ");
+            string titleInput = Console.ReadLine();
+            Console.WriteLine("Type the serie's year of beginning: ");
+            int yearInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the serie's description: ");
+            string descriptionInput = Console.ReadLine();
+            Serie updateSerie = new Serie(
+                id: serieIndex,
+                genre: (Genre)genreInput,
+                title: titleInput,
+                year: yearInput,
+                description: descriptionInput
+            );
+            repository.Update(serieIndex, updateSerie);
         }
 
         private static void InsertSerie()
