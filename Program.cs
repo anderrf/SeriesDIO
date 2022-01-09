@@ -58,7 +58,17 @@ namespace SeriesDIO
         {
             Console.WriteLine("Type the serie's Id: ");
             int serieIndex = int.Parse(Console.ReadLine());
-            repository.Exclude(serieIndex);
+            Serie serieToExclude = repository.GetById(serieIndex);
+            Console.WriteLine("Are you serious about deleting the serie '{0}'? Press [C] to cancel!", serieToExclude.getTitle());
+            string confirm = Console.ReadLine().ToUpper();
+            if(confirm != "C")
+            {
+                repository.Exclude(serieIndex);
+                Console.WriteLine("{0} was excluded!", serieToExclude.getTitle());
+            }
+            else{
+                Console.WriteLine("{0} was kept!", serieToExclude.getTitle());
+            }
         }
 
         private static void UpdateSerie()
@@ -118,7 +128,7 @@ namespace SeriesDIO
             var list = repository.List();
             if(list.Count == 0)
             {
-                Console.WriteLine("There are no series registered!");
+                Console.WriteLine("There are no active series registered!");
                 return;
             }
             foreach(Serie serie in list)
